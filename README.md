@@ -6,3 +6,4 @@ This repository contains the code and dataset for the paper "Revealing Hierarchi
 Code and dataset will be soon.
 
 ## Citations
+Please cite our paper in your publications if our methods and dataset are helpful to your research. The BibTeX is as follows:
