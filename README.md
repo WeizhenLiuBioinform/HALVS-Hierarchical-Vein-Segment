@@ -1,16 +1,47 @@
-# HALVS
+<!-- Our code is based on Unimatch, we added the PSSS module to it.-->
 
+## Installation
 
-This repository contains the code and dataset for the paper "Revealing Hierarchical Structure of Leaf Venations in Plant Science via Label-Efficient Segmentation: Dataset and Method," accepted at **IJCAI2024** in the AI and Social Good track.
+```
+conda create -n unimatch_Halvs python=3.10.4
+conda activate unimatch_Halvs
+pip install -r requirements.txt
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+## Pretrained Backbone
+
+[ResNet-50](https://drive.google.com/file/d/1mqUrqFvTQ0k5QEotk4oiOFyP6B9dVZXS/view?usp=sharing) | [ResNet-101](https://drive.google.com/file/d/1Rx0legsMolCWENpfvE2jUScT3ogalMO8/view?usp=sharing) | [Xception-65](https://drive.google.com/open?id=1_j_mE07tiV24xXOJw4XDze0-a0NAhNVi)
+
+```
+├── ./pretrained
+
+  ├── resnet50.pth
+
+  ├── resnet101.pth
+
+  └── xception.pth
+```
+
 ## Dataset
-Please send an email to **[languangyu@whut.edu.cn](mailto:languangyu@whut.edu.cn)** and include your institution information. We will send you the dataset as soon as we receive your email.
 
-## Citations
-Please cite our paper in your publications if our methods and dataset are helpful to your research. The BibTeX is as follows:
-~~~
-@article{liu2024revealing,
-  title={Revealing Hierarchical Structure of Leaf Venations in Plant Science via Label-Efficient Segmentation: Dataset and Method},
-  author={Liu, Weizhen and Li, Ao and Wu, Ze and Li, Yue and Ge, Baobin and Lan, Guangyu and Chen, Shilin and Li, Minghe and Liu, Yunfei and Yuan, Xiaohui and others},
-  journal={arXiv preprint arXiv:2405.10041},
-  year={2024}
-}
+```
+├── [Halvs]
+
+  ├── JPEGImages
+
+  └── SegmentationClass
+```
+
+Update the data_root entry in the configs/leaf.yaml file to reflect the absolute path of the "Halvs" directory on your local machine.
+
+## Train
+
+```
+sh scripts/train.sh <gpu_num> <port>
+```
+
+#modify these augments in `scripts/train.sh` if you want to try other methods.
+
+#method: ['==unimatch_partial==',=='fixmatch_partial==','unimatch', 'fixmatch', 'supervised'].（Highlight are our method,the others are baselines.）
+
