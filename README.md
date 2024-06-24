@@ -11,14 +11,35 @@ This repository contains the code and dataset for the paper "Revealing Hierarchi
 
 <p align="center"><sup>1</sup>School of Computer Science and Artificial Intelligence, Wuhan University of Technology</p>
 <p align="center"><sup>2</sup>Shanghai Artificial Intelligence Laboratory</p>
+<p align="center"><sup>{liuweizhen, liao2022, arlowu313, gebaobin555, languangyu, chenshilin0125,yuanxiaohui}@whut.edu.cn, {liminghe, dongnanqing}@pjlab.org.cn</sup></p>
 
 <div style="text-align:center">
 <img src="assets/main_figure.jpg" width="800" alt="" class="img-responsive">
 </div>
 
-## Dataset
+## Overview
 
-Please send an email to **[languangyu@whut.edu.cn](mailto:languangyu@whut.edu.cn)** and include your institution information. We will send you the dataset as soon as we receive your email.
+- [Motivation and design](#motivation-and-design)
+- [Dataset](#dataset)
+- [Environment Setup](#environment-setup)
+- [Citations](#citations)
+
+## Motivation and desion
+The motivation behind this study arises from the critical need for hierarchical leaf vein segmentation in plant sciences, particularly in agricultural research. Analyzing the detailed hierarchical structure of leaf venation is essential for understanding the physiological functions of leaves, such as photosynthesis, transpiration, respiration, and nutrient transport. This knowledge can significantly contribute to plant breeding, helping to develop plant species with higher yields, better quality, and greater economic value. However, existing segmentation techniques and datasets are limited, especially in terms of hierarchical vein segmentation. To address this gap, the study introduces the HierArchical Leaf Vein Segmentation (HALVS) dataset, the first public dataset designed specifically for this purpose. This dataset aims to advance research by providing high-quality, annotated images of leaf venations from various plant species, facilitating better understanding and breeding of economically valuable plants.
+
+To address the challenge of label scarcity, the study proposes a label-efficient learning paradigm that leverages partial label information. This method utilizes annotations for primary and secondary veins while inferring tertiary vein segmentation through semi-supervised learning techniques. This approach reduces the need for extensive manual annotations and enables efficient training of deep learning models.
+
+## Dataset
+The dataset comprises 5,057 high-resolution leaf images from three species: soybean, sweet cherry, and London planetree. These images were acquired using a flat-bed scanner with a transmission scanning mode, which provided high-contrast and detailed images of the leaf venation without chemical treatments. Detailed pixel-level annotations were created for the primary, secondary, and tertiary veins of these leaves. 
+<table>
+  <tr>
+    <td><img src="assets/ple.jpg" alt="Image1" width="300" height="300"/></td>
+    <td><img src="assets/cherry6.jpg" alt="Image2" width="200" height="300"/></td>
+    <td><img src="assets/soy.jpg" alt="Image3" width="200" height="300"/></td>
+  </tr>
+</table>
+If you need the complete dataset, please download the [HALVS Dataset User Agreement](./Halvs%20Dataset%20User%20Agreement.docx) and read the relevant regulations. If you agree to the regulations, please fill in the relevant user information in the user agreement, [authorization date], and [electronic signature] at the end of the agreement. Send the PDF format of the user agreement to the email **[liuweizhen@whut.edu.cn](mailto:liuweizhen@whut.edu.cn)**. After review, we will send the download link for the complete dataset via email.
+
 
 ## Citations
 Please cite our paper in your publications if our methods and dataset are helpful to your research. The BibTeX is as follows:
