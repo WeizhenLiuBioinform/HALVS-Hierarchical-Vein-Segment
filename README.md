@@ -38,8 +38,16 @@ The dataset comprises 5,057 high-resolution leaf images from three species: soyb
     <td><img src="assets/soy.jpg" alt="Image3" width="200" height="300"/></td>
   </tr>
 </table>
-If you need the complete dataset, please download the [HALVS Dataset User Agreement](./Halvs%20Dataset%20User%20Agreement.docx) and read the relevant regulations. If you agree to the regulations, please fill in the relevant user information in the user agreement, [authorization date], and [electronic signature] at the end of the agreement. Send the PDF format of the user agreement to the email **[liuweizhen@whut.edu.cn](mailto:liuweizhen@whut.edu.cn)**. After review, we will send the download link for the complete dataset via email.
+If you need the complete dataset, please download the [HALVS Dataset User Agreement](./HALVS%20Dataset%20User%20Agreement.docx) and read the relevant regulations. If you agree to the regulations, please fill in the relevant user information in the user agreement, [authorization date], and [electronic signature] at the end of the agreement. Send the PDF format of the user agreement to the email [liuweizhen@whut.edu.cn](mailto:liuweizhen@whut.edu.cn). After review, we will send the download link for the complete dataset via email.
 
+
+## Environment Setup
+* Python 3.6/3.7/3.8
+* Pytorch 1.10 or above
+* pycocotools (Linux: `pip install pycocotools`; Windows: `pip install pycocotools-windows` (no need to install VS separately))
+* Ubuntu or CentOS (Windows not recommended)
+* Preferably use GPU for training
+* For detailed environment setup, refer to `requirements.txt`
 
 ## Citations
 Please cite our paper in your publications if our methods and dataset are helpful to your research. The BibTeX is as follows:
