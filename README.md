@@ -38,7 +38,7 @@ The dataset comprises 5,057 high-resolution leaf images from three species: soyb
     <td><img src="assets/soy.jpg" alt="Image3" width="200" height="300"/></td>
   </tr>
 </table>
-If you need the complete dataset, please download the [HALVS Dataset User Agreement](./HALVS%20Dataset%20User%20Agreement.docx) and read the relevant regulations. If you agree to the regulations, please fill in the relevant user information in the user agreement, [authorization date], and [electronic signature] at the end of the agreement. Send the PDF format of the user agreement to the email [liuweizhen@whut.edu.cn](mailto:liuweizhen@whut.edu.cn). After review, we will send the download link for the complete dataset via email.
+If you need the complete dataset, please download the and read the relevant regulations. If you agree to the regulations, please fill in the relevant user information in the user agreement, [authorization date], and [electronic signature] at the end of the agreement. Send the PDF format of the user agreement to the email [liuweizhen@whut.edu.cn](mailto:liuweizhen@whut.edu.cn). After review, we will send the download link for the complete dataset via email.
 
 
 ## Environment Setup
