@@ -24,7 +24,7 @@ This repository contains the code and dataset for the paper "Revealing Hierarchi
 - [Environment Setup](#environment-setup)
 - [Citations](#citations)
 
-## Motivation and desion
+## Motivation and design
 The motivation behind this study arises from the critical need for hierarchical leaf vein segmentation in plant sciences, particularly in agricultural research. Analyzing the detailed hierarchical structure of leaf venation is essential for understanding the physiological functions of leaves, such as photosynthesis, transpiration, respiration, and nutrient transport. This knowledge can significantly contribute to plant breeding, helping to develop plant species with higher yields, better quality, and greater economic value. However, existing segmentation techniques and datasets are limited, especially in terms of hierarchical vein segmentation. To address this gap, the study introduces the HierArchical Leaf Vein Segmentation (HALVS) dataset, the first public dataset designed specifically for this purpose. This dataset aims to advance research by providing high-quality, annotated images of leaf venations from various plant species, facilitating better understanding and breeding of economically valuable plants.
 
 To address the challenge of label scarcity, the study proposes a label-efficient learning paradigm that leverages partial label information. This method utilizes annotations for primary and secondary veins while inferring tertiary vein segmentation through semi-supervised learning techniques. This approach reduces the need for extensive manual annotations and enables efficient training of deep learning models.
