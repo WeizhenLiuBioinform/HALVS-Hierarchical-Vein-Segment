@@ -1,0 +1,23 @@
+# arguments for dataset
+dataset: leaf
+nclass: 4
+crop_size: 256 #224
+data_root: 
+conf_threshold: 0.95
+lambda: 1
+# arguments for training
+epochs: 80
+batch_size: 4 # per GPU x 4 GPUs
+lr: 0.001
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 255
+conf_thresh: 0.95
+# arguments for model
+model: deeplabv3plus #SwinT/deeplabv3plus
+backbone: resnet101
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
+# pretrain: pretrained/swin_tiny_patch4_window7_224.pth
