@@ -1,0 +1,22 @@
+Pascal class:
+0 Background
+1 Plane
+2 Bicycle
+3 Bird
+4 Boat
+5 Bottle
+6 Bus
+7 Car
+8 Cat
+9 Car
+10 Cow
+11 table
+12 Dog
+13 Horse
+14 Mcycle
+15 Person
+16 potted plant
+17 sheep
+18 sofa
+19 train 
+20 computer-monitor
