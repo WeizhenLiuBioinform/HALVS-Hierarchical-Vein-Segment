@@ -77,12 +77,21 @@ In this new version, we introduce a novel DDLR module that refines high-confiden
 
 Please cite our paper in your publications if our methods and dataset are helpful to your research. The BibTeX is as follows:
 ~~~
-@article{liu2024revealing,
-  title={Revealing Hierarchical Structure of Leaf Venations in Plant Science via Label-Efficient Segmentation: Dataset and Method},
-  author={Liu, Weizhen and Li, Ao and Wu, Ze and Li, Yue and Ge, Baobin and Lan, Guangyu and Chen, Shilin and Li, Minghe and Liu, Yunfei and Yuan, Xiaohui and others},
-  journal={arXiv preprint arXiv:2405.10041},
-  year={2024}
+@inproceedings{ijcai2024p815,
+  title     = {Revealing Hierarchical Structure of Leaf Venations in Plant Science via Label-Efficient Segmentation: Dataset and Method},
+  author    = {Liu, Weizhen and Li, Ao and Wu, Ze and Li, Yue and Ge, Baobin and Lan, Guangyu and Chen, Shilin and Li, Minghe and Liu, Yunfei and Yuan, Xiaohui and Dong, Nanqing},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+               Artificial Intelligence, {IJCAI-24}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Kate Larson},
+  pages     = {7367--7375},
+  year      = {2024},
+  month     = {8},
+  note      = {AI for Good},
+  doi       = {10.24963/ijcai.2024/815},
+  url       = {https://doi.org/10.24963/ijcai.2024/815},
 }
+
 
 @article{LIU2026100164,
 title = {Revealing hierarchical structure of leaf venations via diffusion-refined label-efficient segmentation: Dataset and method},
